@@ -48,8 +48,8 @@ SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False))
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://sushankm16:4i1WAfPYKWyqPIDD@cluster0.sngp9pz.mongodb.net/?retryWrites=true&w=majority")
-DATABASE_NAME = environ.get('DATABASE_NAME', "vkbotsthalpathy")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://TPM1:TPM1@cluster0.ejbu5fc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_NAME = environ.get('DATABASE_NAME', "ravikumar1cn")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
@@ -112,7 +112,7 @@ WORKERS = int(environ.get('WORKERS', '4'))
 SESSION_NAME = str(environ.get('SESSION_NAME', 'LazyBot'))
 MULTI_CLIENT = False
 name = str(environ.get('name', 'LazyPrincess'))
-PING_INTERVAL = int(environ.get("PING_INTERVAL", "1200"))  # 20 minutes
+PING_INTERVAL = int(environ.get("PING_INTERVAL", "300"))  # 5 minutes
 if 'DYNO' in environ:
     ON_HEROKU = True
     APP_NAME = str(getenv('APP_NAME'))
