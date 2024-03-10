@@ -121,9 +121,9 @@ else:
     ON_HEROKU = False
 HAS_SSL=bool(getenv('HAS_SSL',False))
 if HAS_SSL:
-    URL = "https://kannadaflixmovie.onrender.com/".format(FQDN)
+    URL = "https://kf-filter-bot.onrender.com/".format(FQDN)
 else:
-    URL = "https://kannadaflixmovie.onrender.com/".format(FQDN)
+    URL = "https://kf-filter-bot.onrender.com/".format(FQDN)
 
 
 
